@@ -27,6 +27,8 @@ call dein#add('scrooloose/syntastic')
 call dein#add('editorconfig/editorconfig-vim')
 call dein#add('bling/vim-airline')
 call dein#add('mhinz/vim-signify')
+call dein#add('xolox/vim-misc')
+call dein#add('xolox/vim-easytags')
 call dein#add('majutsushi/tagbar')
 
 filetype plugin indent on "required for dein
@@ -45,3 +47,12 @@ set laststatus=2
 let g:airline_powerline_fonts = 0
 let g:airline_right_sep = '▜'
 let g:airline_left_sep = '▙'
+
+let g:syntastic_error_symbol = '✘'
+let g:syntastic_warning_symbol = '▲'
+
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
+let g:easytags_resolve_links = 1
+nmap <silent> <leader>b :TagbarToggle<CR>

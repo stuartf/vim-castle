@@ -19,10 +19,11 @@ set background=dark
 
 call dein#begin(expand('~/.vim/dein/'))
 
-call dein#add('Shougo/dein.vim')
+"call dein#add('Shougo/dein.vim')
 
 call dein#add('tpope/vim-fugitive')
 call dein#add('scrooloose/nerdtree')
+call dein#add('jistr/vim-nerdtree-tabs')
 call dein#add('scrooloose/syntastic')
 call dein#add('editorconfig/editorconfig-vim')
 call dein#add('bling/vim-airline')
@@ -32,13 +33,6 @@ call dein#add('xolox/vim-easytags')
 call dein#add('majutsushi/tagbar')
 
 filetype plugin indent on "required for dein
-"autocmd FileType python set omnifunc=pythoncomplete#Complete
-"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-"autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-"autocmd FileType c set omnifunc=ccomplete#Complete
 
 call dein#end()
 
@@ -56,3 +50,4 @@ let g:easytags_async = 1
 let g:easytags_dynamic_files = 2
 let g:easytags_resolve_links = 1
 nmap <silent> <leader>b :TagbarToggle<CR>
+nmap <silent> <leader>t :NERDTreeTabsToggle<CR>

@@ -24,13 +24,15 @@ call dein#begin(expand('~/.vim/dein/'))
 call dein#add('tpope/vim-fugitive')
 call dein#add('scrooloose/nerdtree')
 call dein#add('jistr/vim-nerdtree-tabs')
-call dein#add('scrooloose/syntastic')
+call dein#add('w0rp/ale')
 call dein#add('editorconfig/editorconfig-vim')
 call dein#add('bling/vim-airline')
 call dein#add('mhinz/vim-signify')
 call dein#add('xolox/vim-misc')
 call dein#add('xolox/vim-easytags')
 call dein#add('majutsushi/tagbar')
+call dein#add('tomlion/vim-solidity')
+call dein#add('raghur/vim-ghost')
 
 filetype plugin indent on "required for dein
 

@@ -33,6 +33,8 @@ call dein#add('xolox/vim-easytags')
 call dein#add('majutsushi/tagbar')
 call dein#add('tomlion/vim-solidity')
 call dein#add('raghur/vim-ghost')
+call dein#add('pangloss/vim-javascript')
+call dein#add('mxw/vim-jsx')
 
 filetype plugin indent on "required for dein
 
@@ -43,9 +45,10 @@ set laststatus=2
 let g:airline_powerline_fonts = 0
 let g:airline_right_sep = '▜'
 let g:airline_left_sep = '▙'
+let g:airline#extensions#ale#enabled = 1
 
-let g:syntastic_error_symbol = '✘'
-let g:syntastic_warning_symbol = '▲'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '▲'
 
 let g:easytags_events = ['BufReadPost', 'BufWritePost']
 let g:easytags_async = 1

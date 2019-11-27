@@ -1,10 +1,4 @@
-home/.vim/dein/*
-!home/.vim/dein/repos/
-home/.vim/dein/repos/*
-!home/.vim/dein/repos/github.com/
-home/.vim/dein/repos/github.com/*
-!home/.vim/dein/repos/github.com/Shougo/
-home/.vim/dein/repos/github.com/Shougo/*
-!home/.vim/dein/repos/github.com/Shougo/dein.vim
+home/.vim/bundle/*
+!home/.vim/bundle/Vundle.vim
 
 home/.vim/.netrwhist

@@ -17,28 +17,39 @@ set shiftwidth=2
 set visualbell
 set background=dark
 
-call dein#begin(expand('~/.vim/dein/'))
+let g:python3_host_prog = '/home/stuart/.pyenv/versions/nvim-python-3.7.5/bin/python'
+let g:python_host_prog = '/home/stuart/.pyenv/versions/nvim-python-2.7.16/bin/python'
 
-"call dein#add('Shougo/dein.vim')
+filetype off
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin('~/.config/nvim/bundle')
 
-call dein#add('tpope/vim-fugitive')
-call dein#add('scrooloose/nerdtree')
-call dein#add('jistr/vim-nerdtree-tabs')
-call dein#add('w0rp/ale')
-call dein#add('editorconfig/editorconfig-vim')
-call dein#add('bling/vim-airline')
-call dein#add('mhinz/vim-signify')
-call dein#add('xolox/vim-misc')
-call dein#add('xolox/vim-easytags')
-call dein#add('majutsushi/tagbar')
-call dein#add('tomlion/vim-solidity')
-call dein#add('raghur/vim-ghost')
-call dein#add('pangloss/vim-javascript')
-call dein#add('mxw/vim-jsx')
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
-filetype plugin indent on "required for dein
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'w0rp/ale'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'bling/vim-airline'
+Plugin 'mhinz/vim-signify'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'majutsushi/tagbar'
+Plugin 'tomlion/vim-solidity'
+Plugin 'raghur/vim-ghost'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'floobits/floobits-neovim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'idanarye/vim-vebugger'
 
-call dein#end()
+" All of your Plugins must be added before the following line
+call vundle#end()
+
+filetype plugin indent on
 
 "airline doesn't show up until laststatus is 2 for some reason
 set laststatus=2

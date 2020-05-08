@@ -4,10 +4,6 @@ if &compatible
   set nocompatible
 endif
 
-if has('vim_starting')
-  set runtimepath^=~/.vim/dein/repos/github.com/Shougo/dein.vim
-endif
-
 set incsearch
 set hlsearch
 set ignorecase
@@ -18,7 +14,7 @@ set visualbell
 set background=dark
 
 let g:python3_host_prog = '/home/stuart/.pyenv/versions/nvim-python-3.7.5/bin/python'
-let g:python_host_prog = '/home/stuart/.pyenv/versions/nvim-python-2.7.16/bin/python'
+let g:python_host_prog = '/home/stuart/.pyenv/versions/nvim-python-2.7.17/bin/python'
 
 filetype off
 " set the runtime path to include Vundle and initialize

@@ -4,6 +4,10 @@ if &compatible
   set nocompatible
 endif
 
+set path+=**
+set wildignore+=**/node_modules/**
+set wildignore+=**/.git/**
+
 set incsearch
 set hlsearch
 set ignorecase
@@ -25,6 +29,7 @@ call vundle#begin('~/.config/nvim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'w0rp/ale'
@@ -39,6 +44,7 @@ Plugin 'raghur/vim-ghost'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'floobits/floobits-neovim'
+Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'idanarye/vim-vebugger'
 
